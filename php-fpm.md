@@ -48,3 +48,14 @@ systemctl enable php-fpm
 ````
 netstat -a --unix | grep php
 ````
+
+
+### セキュリティ設定　※任意
+
+デフォルトだとヘッダーにPHPを利用しているという情報が出力されてしまうため、表示しない設定を行います。
+
+TODO
+````
+"expose_php = Off" TODO
+systemctl restart php-fpm
+````

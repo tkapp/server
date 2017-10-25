@@ -1,5 +1,9 @@
 # nginx
 
+## 概要
+
+nginxをインストールし、動作させます。
+
 ## 前提条件
 
 centos7系
@@ -34,3 +38,11 @@ yum -y install --enablerepo=nginx nginx
 systemctl start nginx
 systemctl enable nginx
 ````
+
+## 基本情報
+
+基本設定ファイル: /etc/nginx/nginx.conf
+自動で読み込まれる設定ファイルフォルダー: /etc/nginx/conf.d/
+ドキュメントルート: /usr/share/nginx/html
+
+続いてnginx advanceのセキュリティ対応も行うことを推奨します。
