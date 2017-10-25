@@ -1,4 +1,8 @@
-# mariadb
+# mariadbインストール
+
+## 概要
+
+mariadbをインストールし、DBサーバーを構築します。
 
 ## 前提条件
 
@@ -26,6 +30,8 @@ firewall-cmd --reload
 
 ### mariadbのyumリポジトリ追加
 
+yumでインストールするためのmariadbリポジトリを登録します。
+
 ````
 cat << EOF > /etc/yum.repos.d/mariadb.repo
 # MariaDB 10.2 CentOS repository list - created 2017-07-20 09:28 UTC
@@ -40,11 +46,17 @@ EOF
 ````
 
 ### インストール
+
+yumコマンドでmariadbパッケージをインストールします。
+
 ````
 yum -y install --enablerepo=mariadb MariaDB-server MariaDB-client
 ````
 
 ### 起動
+
+mariadbの起動と、起動時の自動起動設定を行います。
+
 ````
 systemctl start mysql
 systemctl enable mysql
@@ -58,6 +70,8 @@ mysql_secure_installation
 ````
 
 ### ログイン確認
+
+ログインできるか確認します。
 
 ````
 mysql -uroot -p{{ パスワード }}

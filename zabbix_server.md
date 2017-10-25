@@ -1,6 +1,10 @@
-# zabbix server
+# zabbix server構築
 
-## 前提条件条件
+## 前提
+
+zabbix serverを構築し、ホスト機の監視を行えるようにします。
+
+## 前提条件
 
 centos7
 nginx構築済み

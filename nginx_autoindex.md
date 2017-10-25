@@ -1,4 +1,4 @@
-# nginx autoindex
+# nginx autoindex設定
 
 ## 概要
 

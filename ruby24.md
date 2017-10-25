@@ -1,5 +1,9 @@
 # ruby 2.4
 
+## 概要
+
+ruby2.4のインストール手順です。
+
 ## 前提条件
 
 centos7
@@ -23,7 +27,7 @@ make install
 ruby -v
 ````
 
-bundlerもインストール
+bundlerもインストールしておきます。
 ````
 gem install bundler --no-rdoc --no-ri
 ````
