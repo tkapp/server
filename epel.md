@@ -14,7 +14,7 @@ yum -y install epel-release
 
 ### デフォルトでepelリポジトリを見に行かないよう修正。※任意
 ````
-sed -i "s/enabled=0/enabled=1/g" /etc/yum.repo.d/etc/yum.repos.d/epel.repo
+sed -i "s/enabled=0/enabled=1/g" /etc/yum.repos.d/epel.repo
 ````
 
 上記を行った場合は、下記の要領でepelリポジトリからパッケージを取得できます。
