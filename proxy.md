@@ -8,8 +8,8 @@ bash
 ## OS設定
 
 ````
-echo "export http_proxy={{ IP }}:{{ port }}" >> /etc/profile
-echo "export https_proxy={{ IP }}:{{ port }}" >> /etc/profile
+echo "export http_proxy=http://{{ IP }}:{{ port }}" >> /etc/profile
+echo "export https_proxy=http://{{ IP }}:{{ port }}" >> /etc/profile
 source /etc/profile
 ````
 
