@@ -22,6 +22,6 @@ echo "proxy={{ IP }}:{{ port }}" >> /etc/yum.conf
 ## git
 
 ````
-git config --global http.proxy http://{{ IP }}:{{ port }}:8080
-git config --global https.proxy http://{{ IP }}:{{ port }}:8080
+git config --global http.proxy http://{{ IP }}:{{ port }}
+git config --global https.proxy http://{{ IP }}:{{ port }}
 ````
