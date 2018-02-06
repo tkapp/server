@@ -11,7 +11,7 @@ nginxの基本的な設定を行う方法をまとめます。
 ヘッダーなどに表示されるバージョン情報を非表示にします。
 
 ````
-sed -i "/include/i \    server_tokens off;" /etc/nginx/nginx.conf
+sed -i "/http {/a \    server_tokens off;" /etc/nginx/nginx.conf
 systemctl reload nginx
 ````
 
@@ -65,7 +65,7 @@ workerの数を設定します。デフォルト値は1です。
 基本はcore数を設定します。
 
 ````
-sed -i "s/worker_processes  1;/worker_processes  {{ core数 }};/g" /etc/nginx/nginx.conf
+sed -i "s/worker_processes  1;/worker_processes  auto;/g" /etc/nginx/nginx.conf
 systemctl reload nginx
 ````
 
