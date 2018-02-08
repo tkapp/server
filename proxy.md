@@ -16,7 +16,7 @@ source /etc/profile
 ## yum
 
 ````
-echo "proxy={{ IP }}:{{ port }}" >> /etc/yum.conf
+echo "proxy=http://{{ IP }}:{{ port }}" >> /etc/yum.conf
 ````
 
 ## git
